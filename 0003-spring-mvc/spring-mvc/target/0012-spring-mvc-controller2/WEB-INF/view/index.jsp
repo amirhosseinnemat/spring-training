@@ -11,6 +11,6 @@
     <title>Title</title>
 </head>
 <body>
-<a href="/home">click here</a>
+<a href="/main-form">click here</a>
 </body>
 </html>
