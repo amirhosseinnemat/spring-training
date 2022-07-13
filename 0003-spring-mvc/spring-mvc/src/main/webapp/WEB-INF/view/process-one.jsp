@@ -11,6 +11,7 @@
     <title>Title</title>
 </head>
 <body>
-<h1>dsfg</h1>
+<h1>${student.name}</h1>
+<h1>${student.family}</h1>
 </body>
 </html>
