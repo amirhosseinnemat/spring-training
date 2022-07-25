@@ -24,9 +24,12 @@ public class Test {
             session.beginTransaction();
 
             // create new student and add to session
-            student = new Student("javid","panahi");
+//            student = new Student("masoud", "salehi");
 
-            session.save(student);
+//            session.save(student);
+            student = session.get(Student.class, 1);
+            student.setFirstName("javad");
+            session.update(student);
 
             // commit transaction
             session.getTransaction().commit();
