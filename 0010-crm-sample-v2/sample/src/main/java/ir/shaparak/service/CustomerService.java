@@ -1,11 +1,10 @@
-package ir.shaparak.dao;
+package ir.shaparak.service;
 
 import ir.shaparak.entity.Customer;
 
 import java.util.List;
 
-public interface CustomerDAO {
-
+public interface CustomerService {
     public List<Customer> getCustomers();
 
     void saveCustomer(Customer customer);

@@ -14,7 +14,7 @@ header {
     font-size: 18px;
 }
 
-header h1 {
+header h1 h2{
     color: whitesmoke;
 }
 
@@ -59,4 +59,8 @@ tr:nth-child(even) {
 tr:first-child{
     background-color: whitesmoke;
     color: navy;
+}
+
+a{
+    text-decoration: none;
 }
