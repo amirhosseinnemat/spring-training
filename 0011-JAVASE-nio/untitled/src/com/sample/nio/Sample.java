@@ -37,7 +37,7 @@ public class Sample {
     }
 
     // method for checking file existence
-    private static void checkExists(Path p){
+    private static void checkExists(Path p) {
         if (Files.exists(p))
             System.out.println(p.getFileName() + " exist.");
         else
