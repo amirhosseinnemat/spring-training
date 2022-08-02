@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JpaBuddyIdeaProjectConfig">
+    <option name="defaultUnitInitialized" value="true" />
+    <option name="reverseEngineeringLastDbConnectionId" value="53e72156-3f18-471f-8d9d-a623f18f1404" />
+    <option name="reLastEntityCreationPackage" value="src/main/java/entity" />
+    <reUseDbSnapshotConnections>
+      <dbConnection id="53e72156-3f18-471f-8d9d-a623f18f1404" />
+    </reUseDbSnapshotConnections>
+    <option name="newEntityIdType" value="Long" />
+    <option name="newEntityIdStrategy" value="Identity" />
+  </component>
+</project>
