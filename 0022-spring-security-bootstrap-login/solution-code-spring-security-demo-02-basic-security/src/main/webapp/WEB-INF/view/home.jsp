@@ -12,7 +12,7 @@
 	
 	Welcome to the luv2code company home page!
 
-	<form:form method="post" action="${pageContext.request.contextPath}/logout">
+	<form:form method="POST" action="${pageContext.request.contextPath}/logout">
 		<input type="submit" value="Logout">
 	</form:form>
 </body>
