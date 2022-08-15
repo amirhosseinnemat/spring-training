@@ -1,0 +1,5 @@
+com\secority\config\SecurityWebApplicationInitializer.class
+com\secority\controller\HomeController.class
+com\secority\config\AppConfig.class
+com\secority\config\SpringMvcDispatcherServlet.class
+com\secority\config\DemoSecurityConfig.class
