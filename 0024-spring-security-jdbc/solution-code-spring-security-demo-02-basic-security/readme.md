@@ -1,6 +1,6 @@
 **readme :**
 # spring security sample:
-### in this sample, display user `based on content`.
+### in this sample, display user content `based on role`.
 
 ```html
     <sec:authorize access="hasRole('MANAGER')">
