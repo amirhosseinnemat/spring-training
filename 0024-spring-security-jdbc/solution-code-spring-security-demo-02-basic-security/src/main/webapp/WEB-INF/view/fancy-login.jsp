@@ -54,8 +54,9 @@
 
                                 </c:if>
 
+
                                     <%--check for logout--%>
-                                <c:if test="${param.logout != null} ">
+                                <c:if test="${param.logout != null}">
                                     <div class="alert alert-success col-xs-offset-1 col-xs-10">
                                         You have been logged out.
                                     </div>
