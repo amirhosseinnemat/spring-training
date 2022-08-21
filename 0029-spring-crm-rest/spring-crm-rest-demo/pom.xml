@@ -59,11 +59,11 @@
             <version>8.0.28</version>
         </dependency>
 
-        <!-- C3PO -->
+        <!--c3p0-->
         <dependency>
-            <groupId>c3po</groupId>
+            <groupId>com.mchange</groupId>
             <artifactId>c3p0</artifactId>
-            <version>${c3po.version}</version>
+            <version>0.9.5.2</version>
         </dependency>
 
         <!-- Servlet+JSP+JSTL -->
