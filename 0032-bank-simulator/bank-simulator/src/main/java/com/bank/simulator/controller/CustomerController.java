@@ -1,14 +1,15 @@
 package com.bank.simulator.controller;
 
 
+import com.bank.simulator.dto.BankDTO;
+import com.bank.simulator.dto.CustomerDTO;
 import com.bank.simulator.entity.BankEntity;
 import com.bank.simulator.entity.CustomerEntity;
 import com.bank.simulator.service.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.math.BigInteger;
-import java.util.Optional;
+
 
 @RestController
 @RequestMapping("/customer")
@@ -21,7 +22,7 @@ public class CustomerController {
     public CustomerController(CustomerService customerService) {
         this.customerService = customerService;
     }
-
+    
 
     @GetMapping("/test")
     public String testCustomer() {
@@ -45,20 +46,17 @@ public class CustomerController {
     }
 
     @GetMapping("/getCustomer/{customerId}")
-    public CustomerEntity setCustomerSimulatorEntity(@PathVariable("customerId") long customerId){
+    public CustomerEntity setCustomerSimulatorEntity(@PathVariable("customerId") long customerId) {
 
-//        BankEntity bank = new BankEntity();
-//        bank.setName("pasargad");
-//        bank.setBranchCode(1455L);
-//
-//        CustomerEntity customer = new CustomerEntity();
-//        customer.setIban(12445L);
-//        customer.setCardNumber(5022L);
-//        customer.setCvv(588);
-//        customer.setBalance(12000L);
-//        customer.setExpirationDate("01/22");
-//        customer.setBranch_code(bank);
+        CustomerDTO customerDTO = new CustomerDTO();
+        BankDTO bankDTO = new BankDTO();
 
-        return customerService.findById(customerId);
+//        if (customerService.findById(customerId).isPresent()) {
+//            return customerService.findById(customerId).get();
+//        } else {
+//            throw new RuntimeException("customer not found with id : " + customerId);
+//        }
+
+        return customerService.test(customerId);
     }
 }

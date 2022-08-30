@@ -1,5 +1,7 @@
 package com.bank.simulator.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import java.util.List;
 import java.util.Objects;
@@ -16,6 +18,7 @@ public class BankEntity {
     private String name;
 
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "branch_code")
+    @JsonIgnore
     private List<CustomerEntity> customerEntities;
 
     public BankEntity() {

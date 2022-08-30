@@ -9,5 +9,7 @@ public interface CustomerService {
 
     public void save(CustomerEntity customer, BankEntity bank);
 
-    public CustomerEntity findById(Long id);
+    public Optional<CustomerEntity> findById(Long id);
+
+    CustomerEntity test(Long id);
 }
